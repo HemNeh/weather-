@@ -513,7 +513,7 @@ document.getElementById('wind').textContent = "13.3 km/h";
 document.getElementById('humidity').textContent = "28%";
 document.getElementById('uv').textContent = "0.4";
 document.getElementById('aqi').textContent = "4";
-document.getElementById('cityName').textContent = "Delhi";
+document.getElementById('cityName').textContent = "";
 document.getElementById('temp').textContent = "--°C";
 document.getElementById('desc').textContent = "Loading...";
 
@@ -536,7 +536,7 @@ themeBtn.onclick = () => {
 };
 
 /* ========== Kickoff ========== */
-fetchWeather('Delhi');
+fetchWeather('');
 
 /* Ensure canvas uses CSS pixel coordinates for drawing (we used scaling earlier in setup) */
 (function ensureCanvasSetup(){
@@ -546,3 +546,4 @@ fetchWeather('Delhi');
 </script>
 </body>
 </html>
+
